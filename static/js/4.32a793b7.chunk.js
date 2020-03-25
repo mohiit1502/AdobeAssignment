@@ -1,0 +1,2 @@
+(this.webpackJsonpadobeassignment=this.webpackJsonpadobeassignment||[]).push([[4],{38:function(e,n,t){},41:function(e,n,t){"use strict";t.r(n);var a=t(0),s=t.n(a),o=(t(7),t(38)),i=t.n(o),r=function(e){return s.a.createElement("div",{className:i.a.root},s.a.createElement("p",null,"This is the login module"))};r.defaultProps={},r.propTypes={};var p=r;n.default=p}}]);
+//# sourceMappingURL=4.32a793b7.chunk.js.map
