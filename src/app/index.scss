@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+@import 'styles/variables';
+@import 'styles/base';
+@import 'styles/components';
+@import 'styles/pages';
+
+.abcRioButtonBlue {
+  background-color: white!important;
+  color: #585f6b!important;
+  border-radius: 3px;
+}
+
+.g-signin2, .fb-login-button {
+  display: flex!important;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
