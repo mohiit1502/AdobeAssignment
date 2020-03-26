@@ -115,6 +115,7 @@ $bold-font-weight: 700;
 // Neutrals
 $neutral-00: #fff;
 $neutral-10: #f7f7f7;
+$neutral-12: #f1f3f6;
 $neutral-15: #eee;
 $neutral-20: #d5d5d5;
 $neutral-30: #bfbfbf;
@@ -124,8 +125,10 @@ $neutral-60: #333;
 $neutral-70: #000;
 
 // Brand colors
-$brand-color: #017e9b; // blue
-$secondary-brand-color: #005569;
+// $brand-color: #017e9b; // blue
+$brand-color: #4471ea; // blue
+// $secondary-brand-color: #005569;
+$secondary-brand-color: #fafafa;
 $tertiary-brand-color: #83bdcb;
 $quaternary-brand-color: #bfdfe6;
 
@@ -175,6 +178,7 @@ $yelp-color: #af0606;
 // ---
 
 $font-color: $neutral-60;
+$font-color-light: #b8b8b8;
 
 $link-color: $ui-brand-color;
 $active-link-color: $dark-accent-color;
@@ -193,7 +197,7 @@ $disabled-button-background-color: $neutral-15;
 $horizontal-input-padding: $unit;
 $vertical-input-padding: $unit;
 
-$background-color: $neutral-10;
+$background-color: $neutral-12;
 $overlay-color: rgba($neutral-00, 0.85);
 
 

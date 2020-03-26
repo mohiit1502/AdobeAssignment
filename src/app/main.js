@@ -6,8 +6,8 @@ import {createStore, applyMiddleware, compose} from 'redux'
 // import * as serviceWorker from '../serviceWorker';
 import Router from './router';
 import reducer from './reducer'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const composeEnhancers =
   typeof window === 'object' &&

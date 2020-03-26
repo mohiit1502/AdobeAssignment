@@ -17,9 +17,9 @@ module.exports = plop => {
           type: 'add',
           // Plop will create directories for us if they do not exist
           // so it's okay to add files in nested locations.
-          path: 'src/app/components/molecules/{{pascalCase name}}/{{pascalCase name}}.js',
+          path: 'src/app/components/molecules/{{pascalCase name}}/{{pascalCase name}}.jsx',
           templateFile:
-            'plop-templates/Component/Component.js.hbs',
+            'plop-templates/Component/Component.jsx.hbs',
         },
         {
           type: 'add',
@@ -53,7 +53,7 @@ module.exports = plop => {
           path: 'src/app/components/index.js',
           // Pattern tells plop where in the file to inject the template
           pattern: `/* PLOP_INJECT_IMPORT */`,
-          template: `import {{pascalCase name}} from './{{pascalCase name}}';`,
+          template: `import {{pascalCase name}} from './molecules/{{pascalCase name}}';`,
         },
         {
           type: 'append',
@@ -75,9 +75,9 @@ module.exports = plop => {
       actions: [
         {
           type: 'add',
-          path: 'src/app/pages/{{pascalCase name}}/{{pascalCase name}}.js',
+          path: 'src/app/pages/{{pascalCase name}}/{{pascalCase name}}.jsx',
           templateFile:
-            'plop-templates/Page/Page.js.hbs',
+            'plop-templates/Page/Page.jsx.hbs',
         },
         {
           type: 'add',
@@ -88,9 +88,9 @@ module.exports = plop => {
         {
           type: 'add',
           path:
-            'src/app/pages/{{pascalCase name}}/{{pascalCase name}}.module.css',
+            'src/app/pages/{{pascalCase name}}/{{pascalCase name}}.module.scss',
           templateFile:
-            'plop-templates/Page/Page.module.css.hbs',
+            'plop-templates/Page/Page.module.scss.hbs',
         },
         {
           type: 'add',
