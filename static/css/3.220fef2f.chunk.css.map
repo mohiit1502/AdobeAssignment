@@ -1,0 +1,1 @@
+{"version":3,"sources":["Footer.component.scss"],"names":[],"mappings":"AAAA,UACI,cAAe,CACf,MAAO,CACP,QAAS,CACT,UAAW,CACX,qBAAsB,CACtB,UAAY,CACZ,iBAAkB","file":"3.220fef2f.chunk.css","sourcesContent":[".c-Footer {\n    position: fixed;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    background-color: #222;\n    color: white;\n    text-align: center;\n}\n"]}
