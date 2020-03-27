@@ -1,2 +1,0 @@
-(this.webpackJsonpadobeassignment=this.webpackJsonpadobeassignment||[]).push([[7],{61:function(e,n,a){},65:function(e,n,a){"use strict";a.r(n);var s=a(0),t=a.n(s),o=(a(7),a(61)),r=a.n(o),i=function(e){return t.a.createElement("div",{className:r.a.root})};i.defaultProps={},i.propTypes={};var p=i;n.default=p}}]);
-//# sourceMappingURL=7.ba481c38.chunk.js.map
