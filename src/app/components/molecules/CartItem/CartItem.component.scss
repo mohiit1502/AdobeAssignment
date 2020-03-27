@@ -1,3 +1,22 @@
-.c-CartItem {
-  
+@import './../../../styles//variables';
+
+.c-Cart__c-CartList__c-CartItem {
+    padding: 15px 0;
+    margin-bottom: 13px;
+    background: $neutral-00;
+    border: 1px solid $neutral-40;
+    line-height: 1;
+
+    [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .c-Cart__c-CartList__c-CartItem__image {
+        margin-bottom: 0.7rem;
+    }
+
+    .c-Cart__c-CartList__c-CartItem__name {
+        font-size: $small-font-size;
+    }
 }

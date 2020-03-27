@@ -1,3 +1,35 @@
+@import './../../../styles/variables';
+
 .c-Header {
-  
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    position: fixed;
+    height: $header-height;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: $brand-color;
+    color: $neutral-00;
+    padding: 1em 1.5em;
+    z-index: 2;
+    transition: transform 0.4s;
+
+    .c-Header__logo-main {
+        cursor: pointer;
+    }
+
+    .c-Header__iconClass {
+        transform: rotateX(18deg) rotateZ(10deg) scale(2);
+        color: yellow;
+        margin: 6px 0px 3px 3px;
+    }
+
+    .header-icon {
+        font-size: $bigger-font-size;
+        &:hover {
+            color: $light-accent-color;
+        }
+    }
 }

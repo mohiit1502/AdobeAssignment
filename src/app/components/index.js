@@ -1,4 +1,6 @@
 /* PLOP_INJECT_IMPORT */
+import ItemPrice from './molecules/ItemPrice';
+import SectionLoader from './molecules/SectionLoader';
 import CartSummary from './molecules/CartSummary';
 import CartItem from './molecules/CartItem';
 import CartList from './molecules/CartList';
@@ -23,6 +25,8 @@ import SelectOption from './atoms/SelectOption';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	ItemPrice,
+	SectionLoader,
 	CartSummary,
 	CartItem,
 	CartList,

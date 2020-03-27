@@ -1,20 +1,76 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductTile.component.scss';
+import {connect} from 'react-redux';
+import {createPropsSelector} from 'reselect-immutable-helpers';
+import {addToCart} from './../../../pages/Cart/actions'
+import {getCartTotalCount, getCartItems} from './../../../pages/Cart/selectors'
+
+import Button from './../../atoms/Button'
+import ItemPrice from '../ItemPrice/ItemPrice';
+
+import './ProductTile.component.scss';
 
 const ProductTile = props => {
+
+  const product = props.product
+  const addToCartButtonClass = "btn btn__addToCart"
+
+  const addToCart = (productId) => {
+    let cartTotalCount = props.cartTotalCount
+    const cartItems = props.cartItems
+    let count = cartItems && cartItems[productId] ? cartItems[productId] : 0
+    cartItems[productId] = ++count
+    props.addToCart(++cartTotalCount, cartItems)
+  }
+
   return (
-    <div className='c-ProductTile'>
-    </div>
+    <article
+      className='c-Plp__c-ProductContainer__c-ProductTile col-6 col-md-4 col-lg-2'
+      id={`product_${product.id}`}>
+      <figure>
+        <img className="c-Plp__c-ProductContainer__c-ProductTile__image" src={product.img_url} alt={product.name} style={{width: "100%"}} />
+        {product.name && <figcaption className="c-Plp__c-ProductContainer__c-ProductTile__name">{product.name}</figcaption>}
+      </figure>
+      {/* <div className="c-Plp__c-ProductContainer__c-ProductTile__price__container">
+        {product.discountedPrice && <span className="c-Plp__c-ProductContainer__c-ProductTile__price">&#x20B9;{product.discountedPrice}</span>}
+        {
+          hasDiscount &&
+          (
+            <React.Fragment>
+              <span className="c-Plp__c-ProductContainer__c-ProductTile__price--strikethrough">{product.price}</span>
+              <span className="c-Plp__c-ProductContainer__c-ProductTile__discount">{product.discount}% off</span>
+            </React.Fragment>
+          )
+        }
+      </div> */}
+      <ItemPrice product={product} />
+      <Button
+        classes={addToCartButtonClass}
+        buttonValue="add-to-cart"
+        buttonType="button"
+        buttonName="addToCartButton"
+        buttonText="Add To Cart"
+        onClickHandler={() => addToCart(product.id)} />
+    </article>
   );
 };
 
-ProductTile.defaultProps = {
-
-};
-
 ProductTile.propTypes = {
-
+  addToCart: PropTypes.func,
+  cartTotalCount: PropTypes.number,
+  cartItems: PropTypes.object
 };
 
-export default ProductTile;
+const mapStateToProps = createPropsSelector({
+  cartTotalCount: getCartTotalCount,
+  cartItems: getCartItems
+})
+
+const mapDispatchToProps = ({
+  addToCart
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductTile);

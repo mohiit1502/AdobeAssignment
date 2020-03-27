@@ -5,6 +5,7 @@ import styles from './Footer.component.scss';
 const Footer = props => {
   return (
     <footer className='c-Footer'>
+      <p>@Copyright</p>
     </footer>
   );
 };

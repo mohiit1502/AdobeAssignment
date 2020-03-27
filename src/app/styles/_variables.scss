@@ -98,7 +98,8 @@ $big-font-size: 20px;
 $font-size: 16px;
 $small-font-size: 14px;
 $smaller-font-size: 12px;
-$tiny-font-size: 8px;
+$tiny-font-size: 10px;
+$smallest-font-size: 8px;
 
 // Font weight
 $thin-font-weight: 100;
@@ -117,6 +118,7 @@ $neutral-00: #fff;
 $neutral-10: #f7f7f7;
 $neutral-12: #f1f3f6;
 $neutral-15: #eee;
+$neutral-17: #e1e1e1;
 $neutral-20: #d5d5d5;
 $neutral-30: #bfbfbf;
 $neutral-40: #999;
@@ -163,6 +165,7 @@ $dark-error-color: darken($error-color, 15%);
 
 // Sale color
 $sale-color: $error-color;
+$prominent-color: $error-color;
 
 // Social colors
 $facebook-color: #3a5a93;
@@ -178,7 +181,7 @@ $yelp-color: #af0606;
 // ---
 
 $font-color: $neutral-60;
-$font-color-light: #b8b8b8;
+$font-color-light: $neutral-12;
 
 $link-color: $ui-brand-color;
 $active-link-color: $dark-accent-color;
@@ -194,6 +197,7 @@ $focused-input-border-color: $secondary-brand-color;
 $disabled-input-color: $neutral-40;
 $disabled-input-background-color: $neutral-15;
 $disabled-button-background-color: $neutral-15;
+$add-to-cart-button-background-color: #f7ae3a;
 $horizontal-input-padding: $unit;
 $vertical-input-padding: $unit;
 

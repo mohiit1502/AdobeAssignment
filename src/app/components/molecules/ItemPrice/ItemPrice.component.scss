@@ -1,0 +1,27 @@
+@import './../../../styles/variables';
+
+.c-ItemPrice {
+    line-height: $smaller-font-size;
+    margin-bottom: 0.9rem;
+    display: flex;
+    .c-ItemPrice__price {
+        font-size: $smaller-font-size;
+        font-weight: $bold-font-weight;
+        padding-right: 0.5rem;
+    }
+    
+    .c-ItemPrice__price--strikethrough {
+        color: $neutral-40;
+        font-weight: $bold-font-weight;
+        font-size: $tiny-font-size;
+        text-decoration: line-through;
+        margin-left: $unit * 0.8;   
+    }
+    
+    .c-ItemPrice__discount {
+        color: #4aa219;
+        font-weight: $bold-font-weight;
+        font-size: $tiny-font-size;
+        margin-left: auto;
+    }
+}

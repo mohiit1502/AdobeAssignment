@@ -1,9 +1,19 @@
+@import './../../../styles/variables';
+
 .c-Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #222;
-    color: white;
-    text-align: center;
+    background-color: $brand-color;
+    color: $font-color-light;
+    padding: 0.7em;
+
+    p {
+        margin-bottom: 0;
+        font-weight: bold;
+    }
 }

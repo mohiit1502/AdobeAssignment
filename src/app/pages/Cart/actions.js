@@ -1,3 +1,4 @@
+export const ADD_TO_CART = 'ADD_TO_CART'
 export const UPDATE_FORM_VALUES = 'UPDATE_BILLING_FORM_VALUES'
 export const UPDATE_FORM_ERRORS = 'UPDATE_BILLING_FORM_ERRORS'
 
@@ -7,6 +8,13 @@ export const initializeLogin = () => (dispatch) => {
     // ])
     // .then(() => ({statusCode: 200}))
     // .catch((err) => ({statusCode: err.statusCode || 500}))
+}
+
+export const addToCart = (cartTotalCount, cartItems) => {
+    return {
+        type: ADD_TO_CART,
+        payload: {cartTotalCount, cartItems}
+    }
 }
 
 export const updateFormValues = (formValues) => {

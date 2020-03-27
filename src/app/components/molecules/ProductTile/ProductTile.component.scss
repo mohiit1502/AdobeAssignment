@@ -1,3 +1,36 @@
-.c-ProductTile {
-  
+@import './../../../styles/variables';
+
+.c-Plp__c-ProductContainer__c-ProductTile {
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    // margin-bottom: 2rem;
+    padding: 10px 15px;
+    border: 1px solid $neutral-17;
+
+    .c-Plp__c-ProductContainer__c-ProductTile__image {
+        margin-bottom: 0.7rem;
+    }
+
+    .c-Plp__c-ProductContainer__c-ProductTile__name {
+        font-size: $small-font-size;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 7px;
+        background-color: $add-to-cart-button-background-color;
+        cursor: pointer;
+        font-size: $smaller-font-size;
+        font-weight: $bold-font-weight;
+    }
+    
+    button:hover {
+        opacity: 0.7;
+    }
+
+    @media only screen and (min-width: 768px) {
+        
+    }
 }
