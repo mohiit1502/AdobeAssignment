@@ -33,5 +33,21 @@
                 }
             }
         }
+    },
+    "search": {
+        "search": {
+            "placeholder": "Search..",
+            "type": "text",
+            "id": "search",
+            "elementType": "input",
+            "validation": {
+                "required": {
+                    "isRequired": "false"
+                },
+                "rules": {
+                    
+                }
+            }
+        }
     }
 }

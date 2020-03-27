@@ -1,22 +1,32 @@
 @import './../../../styles//variables';
 
 .c-Cart__c-CartList__c-CartItem {
-    padding: 15px 0;
-    margin-bottom: 13px;
+    padding: 1rem 0;
     background: $neutral-00;
     border: 1px solid $neutral-40;
     line-height: 1;
 
+    &:not(:last-child) {
+        margin-bottom: 13px;
+    }
+    
     [class*="col-"] {
         padding-left: 10px;
         padding-right: 10px;
     }
 
     .c-Cart__c-CartList__c-CartItem__image {
-        margin-bottom: 0.7rem;
+        // margin-bottom: 0.7rem;
     }
 
     .c-Cart__c-CartList__c-CartItem__name {
         font-size: $small-font-size;
+    }
+
+    .c-Cart__c-CartList__c-CartItem__buttonItemRemove {
+        text-transform: capitalize;
+        font-size: $font-size;
+        font-weight: $bold-font-weight;
+        margin-bottom: 0;
     }
 }

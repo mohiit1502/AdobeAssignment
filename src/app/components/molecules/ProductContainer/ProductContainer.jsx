@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {dispatchProducts} from './../../../pages/PLP/actions'
 import ProductTile from './../ProductTile'
 import PageLoader from '../PageLoader/PageLoader';
+import './ProductContainer.component.scss'
 
 const ProductContainer = props => {
 
@@ -11,7 +12,8 @@ const ProductContainer = props => {
     && props.products.length !== 0
     && props.products.map(product => {
       const discount =  product.discount && product.price * (product.discount/100)
-      product.discountedPrice = Math.ceil(product.price - discount)
+      product.discountAmount = Math.ceil(discount)
+      product.discountedPrice = Math.ceil(product.price - product.discountAmount)
       return product
     })
 

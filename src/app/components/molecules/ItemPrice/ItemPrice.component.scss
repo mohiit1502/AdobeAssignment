@@ -4,8 +4,9 @@
     line-height: $smaller-font-size;
     margin-bottom: 0.9rem;
     display: flex;
+    align-items: baseline;
     .c-ItemPrice__price {
-        font-size: $smaller-font-size;
+        font-size: $small-font-size;
         font-weight: $bold-font-weight;
         padding-right: 0.5rem;
     }
@@ -13,15 +14,15 @@
     .c-ItemPrice__price--strikethrough {
         color: $neutral-40;
         font-weight: $bold-font-weight;
-        font-size: $tiny-font-size;
+        font-size: $smaller-font-size;
         text-decoration: line-through;
-        margin-left: $unit * 0.8;   
+        // margin-left: $unit * 0.8;   
     }
     
     .c-ItemPrice__discount {
         color: #4aa219;
         font-weight: $bold-font-weight;
-        font-size: $tiny-font-size;
+        font-size: $smaller-font-size;
         margin-left: auto;
     }
 }

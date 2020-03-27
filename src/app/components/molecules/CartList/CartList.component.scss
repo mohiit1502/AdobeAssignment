@@ -1,16 +1,5 @@
 @import './../../../styles/variables';
 
 .c-CartList {
-    padding: 0.8em 0;
-    .c-CartList__emptyCart {
-        background: $neutral-00;
-        margin-top: 25%;
-        border: 1px solid black;
-        text-align: center;
-        padding: 1em;
-
-        .c-CartList__emptyCart__information {
-            color: $neutral-40;
-        }
-    }
+    padding: 0.8em 0 0;
 }

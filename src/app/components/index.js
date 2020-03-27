@@ -1,4 +1,6 @@
 /* PLOP_INJECT_IMPORT */
+import Modal from './molecules/Modal';
+import QuantityControlWidget from './molecules/QuantityControlWidget';
 import ItemPrice from './molecules/ItemPrice';
 import SectionLoader from './molecules/SectionLoader';
 import CartSummary from './molecules/CartSummary';
@@ -25,6 +27,8 @@ import SelectOption from './atoms/SelectOption';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	Modal,
+	QuantityControlWidget,
 	ItemPrice,
 	SectionLoader,
 	CartSummary,

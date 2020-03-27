@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {createPropsSelector} from 'reselect-immutable-helpers';
-import {addToCart} from './../../../pages/Cart/actions'
+import {updateCart} from './../../../pages/Cart/actions'
 import {getCartTotalCount, getCartItems} from './../../../pages/Cart/selectors'
 
 import Button from './../../atoms/Button'
@@ -15,12 +15,12 @@ const ProductTile = props => {
   const product = props.product
   const addToCartButtonClass = "btn btn__addToCart"
 
-  const addToCart = (productId) => {
+  const updateCart = (productId) => {
     let cartTotalCount = props.cartTotalCount
     const cartItems = props.cartItems
     let count = cartItems && cartItems[productId] ? cartItems[productId] : 0
     cartItems[productId] = ++count
-    props.addToCart(++cartTotalCount, cartItems)
+    props.updateCart(++cartTotalCount, cartItems)
   }
 
   return (
@@ -50,13 +50,13 @@ const ProductTile = props => {
         buttonType="button"
         buttonName="addToCartButton"
         buttonText="Add To Cart"
-        onClickHandler={() => addToCart(product.id)} />
+        onClickHandler={() => updateCart(product.id)} />
     </article>
   );
 };
 
 ProductTile.propTypes = {
-  addToCart: PropTypes.func,
+  updateCart: PropTypes.func,
   cartTotalCount: PropTypes.number,
   cartItems: PropTypes.object
 };
@@ -67,7 +67,7 @@ const mapStateToProps = createPropsSelector({
 })
 
 const mapDispatchToProps = ({
-  addToCart
+  updateCart
 })
 
 export default connect(

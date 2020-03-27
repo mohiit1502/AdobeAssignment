@@ -1,3 +1,54 @@
+@import './../../../styles/variables';
+
 .c-CartSummary {
-  
+    padding: 0.8em 0;
+    .c-CartSummary__inner {
+        border: 1px solid $neutral-40;
+        background: $neutral-00;
+        padding: 0.4rem 0;
+        font-size: $font-size;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        [class*="col-"] {
+            padding-left: 10px;
+            padding-right: 10px;
+        
+        }
+
+        .c-CartSummary__headerRow, .c-CartSummary__price, .c-CartSummary__discount, .c-CartSummary__total {
+            padding: 0.5em 0;
+        }
+        .c-CartSummary__headerRow {
+            border-bottom: 1px solid $neutral-20;
+            font-size: $big-font-size;
+            .c-CartSummary__headerContent {
+                text-transform: capitalize;
+                font-weight: $bold-font-weight;
+                color: $neutral-40;
+            }
+        }
+
+        .c-CartSummary__details {
+            padding: 1em 0;
+            border-bottom: 2px solid $neutral-40;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            
+            .float-right {
+                right: 0;
+            }
+        }
+
+        .c-CartSummary__total {
+            font-weight: $bold-font-weight;
+        }
+    }
 }

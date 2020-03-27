@@ -8,7 +8,7 @@ const ItemPrice = ({product}) => {
 
   return (
     <div className='c-ItemPrice'>
-      {product.discountedPrice && <span className="c-Plp__c-ProductContainer__c-ProductTile__price">&#x20B9;{product.discountedPrice}</span>}
+      {product.discountedPrice && <span className="c-ItemPrice__price">&#x20B9;{product.discountedPrice}</span>}
       {
         hasDiscount &&
         (

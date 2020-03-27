@@ -1,3 +1,25 @@
+@import './../../../styles//variables';
+
 .c-Plp__c-SortAndFilterPanel__c-Search {
   margin-left: auto;
+
+  .c-Plp__c-SortAndFilterPanel__c-Search__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $neutral-00;
+    color: $neutral-00;
+    padding-bottom: 0.3rem;
+    &::placeholder {
+      color: $neutral-00;
+      opacity: 1;
+    }
+    
+    &:-ms-input-placeholder {
+      color: $neutral-00;
+    }
+    
+    &::-ms-input-placeholder {
+      color: $neutral-00;
+    }
+  }
 }

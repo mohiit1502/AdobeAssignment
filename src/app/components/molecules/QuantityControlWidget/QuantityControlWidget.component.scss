@@ -1,0 +1,38 @@
+@import './../../../styles/variables';
+
+.c-QuantityControlWidget {
+    display: flex;
+    margin-bottom: 1rem;
+    .c-QuantityControlWidget__part {
+        border: 1.5px solid $neutral-30;;
+        border-radius: 50%;
+        font-size: $big-font-size;
+        // {props.product && props.product.count}
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+        &.c-QuantityControlWidget__part--circled {
+            border-radius: 50%;
+            cursor: pointer;
+            color: $neutral-50;
+        }
+        &.c-QuantityControlWidget__part--minus {
+            padding: 2px 8px 3px; 
+        }
+        &.c-QuantityControlWidget__part--plus {
+            padding: 1px 4px; 
+        }
+        &.c-QuantityControlWidget__part--squared {
+            border-radius: 2px;
+            font-size: $smaller-font-size;
+            font-weight: $bold-font-weight;
+            color: $neutral-60;
+            padding: 0 13px;
+            align-items: center;
+        }
+
+
+    }
+}
