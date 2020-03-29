@@ -1,17 +1,21 @@
 @import './../../../styles/variables';
 
-.c-Plp__c-SortAndFilterPanel__c-CartIcon {
-  margin-left: 1rem;
+.c-Plp__c-Header__c-CartIcon {
+  // margin-left: 1rem;
   position: relative;
 
-  .c-Plp__c-SortAndFilterPanel__c-CartIcon__badge {
+  .c-Plp__c-Header__c-CartIcon__badge {
     position: absolute;
-    top: -3px;
+    top: -7px;
     right: -9px;
     padding: 0px 5px;
     border-radius: 50%;
     background-color: $prominent-color;
     color: $neutral-00;
     font-size: $smaller-font-size;
+  }
+
+  .fa-shopping-cart {
+    float: right;
   }
 }

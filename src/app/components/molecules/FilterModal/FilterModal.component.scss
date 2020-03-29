@@ -1,3 +1,60 @@
+@import './../../../styles/variables';
+
 .c-FilterModal {
-  
+    &.modal {
+        &.show {
+            display: block;
+            background-color: rgba(0,0,0,0.5);
+        }
+        // &.fade .modal-dialog {
+        //     transition: transform .3s ease-out;
+        // }
+        .modal-dialog {
+            pointer-events: auto;
+            .modal-body {
+                color: $neutral-40;
+                padding: 1rem;
+                .error {
+                    color: $error-color;
+                    font-size: $small-font-size;
+                }
+                .input-range {
+                    margin: 25px 0;
+                    font-weight: $bold-font-weight;
+                    font-size: $small-font-size;
+                    .input-range__label-container {
+                        font-family: $font-family;
+                    }
+    
+                    .input-range__label {
+                        top: 20px;
+                        &.input-range__label--value {
+                            top: -40px;
+                        }
+                        &.input-range__label--max {
+                            right: 2em;
+                        }
+                    }
+                }
+                .c-FilterModal__input-range__subtitle {
+                    font-size: $font-size;
+                    font-weight: $bold-font-weight;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &.ReactModal__Overlay {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &.ReactModal__Overlay--after-open {
+        opacity: 1;
+    }
+    
+    &.ReactModal__Overlay--before-close {
+        opacity: 0;
+    }
 }

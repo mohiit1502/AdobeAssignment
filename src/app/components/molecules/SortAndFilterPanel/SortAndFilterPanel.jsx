@@ -8,24 +8,25 @@ import FilterModal from '../FilterModal';
 
 const SortAndFilterPanel = props => {
 
-  const [showSortModal, setShowSortModal] = useState(false)
-  const [showFilterModal, setShowFilterModal] = useState(false)
-
-  const handleSortModalChange = (modalState) => {
-    setShowSortModal(() => modalState)
+  const [sortModalIsOpen,setSortIsOpen] = useState(false);
+  const [filterModalIsOpen,setFilterIsOpen] = useState(false);
+  
+  function closeModal(type, e){
+    e.stopPropagation();
+    type === "sort" ? setSortIsOpen(false) : setFilterIsOpen(false);
   }
 
   return (
     <div className='c-Plp__c-SortAndFilterPanel'>
       <div className="container">
         <div className="row">
-          <div className="c-Plp__c-SortAndFilterPanel__tool sort col-6" onClick={() => setShowSortModal(true)}>
+          <div className="c-Plp__c-SortAndFilterPanel__tool sort col-6" onClick={() => setSortIsOpen(true)}>
             <p className="c-Plp__c-SortAndFilterPanel__toolContent"><FontAwesomeIcon icon={faSort} /> Sort</p>
-            <SortModal showModal={showSortModal} setModalState={handleSortModalChange} />
+            <SortModal closeModal={(e) => closeModal("sort", e)} modalIsOpen={sortModalIsOpen} />
           </div>
-          <div className="c-Plp__c-SortAndFilterPanel__tool filter col-6" onClick={() => setShowFilterModal(true)}>
+          <div className="c-Plp__c-SortAndFilterPanel__tool filter col-6" onClick={() => setFilterIsOpen(true)}>
             <p className="c-Plp__c-SortAndFilterPanel__toolContent"><FontAwesomeIcon icon={faFilter} /> Filter</p>
-            <FilterModal showModal={showFilterModal} setModalState={setShowFilterModal} />
+            <FilterModal closeModal={(e) => closeModal("filter", e)} modalIsOpen={filterModalIsOpen}/>
           </div>
         </div>
       </div>

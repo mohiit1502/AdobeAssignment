@@ -6,6 +6,7 @@ import {createStore, applyMiddleware, compose} from 'redux'
 // import * as serviceWorker from '../serviceWorker';
 import Router from './router';
 import reducer from './reducer'
+import ReactModal from 'react-modal'
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -19,6 +20,7 @@ const composeEnhancers =
     }) : compose;
 const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 
+ReactModal.setAppElement('#root');
 ReactDOM.render(<Router store={store} />, document.getElementById('root'));
 
 // serviceWorker.unregister();

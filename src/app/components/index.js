@@ -1,4 +1,7 @@
 /* PLOP_INJECT_IMPORT */
+import SortTool from './molecules/SortTool';
+import FilterTool from './molecules/FilterTool';
+import ProductContainerWithTools from './molecules/ProductContainerWithTools';
 import Modal from './molecules/Modal';
 import QuantityControlWidget from './molecules/QuantityControlWidget';
 import ItemPrice from './molecules/ItemPrice';
@@ -27,6 +30,9 @@ import SelectOption from './atoms/SelectOption';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	SortTool,
+	FilterTool,
+	ProductContainerWithTools,
 	Modal,
 	QuantityControlWidget,
 	ItemPrice,

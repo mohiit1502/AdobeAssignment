@@ -1,0 +1,80 @@
+@import './../../../styles/variables';
+
+.c-ProductContainerWithTools {
+
+    .c-ProductContainerWithTools__asideCol {
+        border-right: 2px solid #ddd;
+        padding-right: 27px;
+    }
+    .c-SortTool__content {
+        padding: 20px;
+        .c-SortTool__header {
+            margin-right: 3rem;
+
+            .c-SortTool__title {
+                font-weight: $bold-font-weight;
+                font-size: $big-font-size;
+            }
+        }
+        .radio {
+            display: inline;
+            margin-right: 2.5rem;
+            input[type=radio] {
+                display: none;
+            }
+
+            label {
+                color: $neutral-40;
+                padding: 5px;
+            }
+
+            .c-SortTool__body__label {
+                border-bottom: 1px solid $brand-color;
+                color: $brand-color;
+            }
+        }
+
+        .c-SortTool__header, .c-SortTool__title, .c-SortTool__body, .c-SortTool__body>.container, .c-SortTool__body>.container.radio {
+            display: inline-block;
+        }
+    }
+
+    .c-FilterTool__content {
+        padding: 1rem;
+        .c-FilterTool__body {
+            color: $neutral-40;
+            margin: 3em 0;
+            .input-range {
+                // margin: 25px 0;
+                font-weight: $bold-font-weight;
+                font-size: $small-font-size;
+                .input-range__label-container {
+                    font-family: $font-family;
+                }
+
+                .input-range__label {
+                    top: 20px;
+                    &.input-range__label--value {
+                        top: -40px;
+                    }
+                    &.input-range__label--max {
+                        right: 2em;
+                    }
+                }
+            }
+            .c-FilterModal__input-range__subtitle {
+                font-size: $font-size;
+                font-weight: $bold-font-weight;
+                text-align: center;
+                margin-top: 1em;
+            }
+        }
+        .c-FilterTool__footer {
+            text-align: center;
+            button {
+                border-radius: 22px;
+                padding: 9px 29px;
+            }
+        }
+    }
+}

@@ -1,3 +1,55 @@
+@import './../../../styles/variables';
+
 .c-Plp__c-ProductContainer {
     margin-bottom: 46px;
+
+    .c-Cart__emptyPlp {
+        background: $neutral-00;
+        margin-top: 25%;
+        border: 1px solid black;
+        text-align: center;
+        padding: 1em;
+
+        .c-Cart__emptyPlp__information {
+            color: $neutral-40;
+        }
+    }
+
+    .c-Plp__c-ProductContainer__infoContainer {
+        background: $neutral-00;
+        color: $success-color;
+        padding: 1em;
+        font-weight: $bold-font-weight;
+
+        .c-Plp__c-ProductContainer__information {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+    }
+
+    .c-Plp__c-ProductContainer__btnClearSearch {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 7px 20px;
+        background-color: $brand-color;
+        color: $neutral-12; 
+        cursor: pointer;
+        font-size: $smaller-font-size;
+        font-weight: $bold-font-weight;
+    }
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .c-Cart__emptyPlp {
+            margin-top: 0;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+    }
 }

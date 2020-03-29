@@ -1,14 +1,33 @@
 @import './../../../styles//variables';
 
-.c-Plp__c-SortAndFilterPanel__c-Search {
+.c-Plp__c-Header__c-Search {
   margin-left: auto;
+  position: relative;
 
-  .c-Plp__c-SortAndFilterPanel__c-Search__input {
+  .c-Plp__c-Header__c-Search__input {
     background: transparent;
     border: none;
     border-bottom: 1px solid $neutral-00;
     color: $neutral-00;
-    padding-bottom: 0.3rem;
+    float: right;
+    min-height: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-size: $small-font-size;
+    font-weight: $bold-font-weight;
+    padding: 7px 10px 8px 0;
+    -webkit-transition: all 0.33s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+    outline: none;
+
+    &.c-Plp__c-Header__c-Search__input--visible {
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+    
     &::placeholder {
       color: $neutral-00;
       opacity: 1;
@@ -16,10 +35,17 @@
     
     &:-ms-input-placeholder {
       color: $neutral-00;
+      font-size: $small-font-size;
     }
     
     &::-ms-input-placeholder {
       color: $neutral-00;
     }
+  }
+
+  .c-Plp__c-Header__c-Search__searchIcon {
+    position: absolute;
+    top: 6px;
+    right: 0px;
   }
 }

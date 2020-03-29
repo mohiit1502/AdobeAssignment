@@ -16,9 +16,9 @@ const CartIcon = props => {
   }
 
   return (
-    <div className='c-Plp__c-SortAndFilterPanel__c-CartIcon header-icon' onClick={navigateToCart}>
+    <div className='c-Plp__c-Header__c-CartIcon header-icon' onClick={navigateToCart}>
       <FontAwesomeIcon icon={faShoppingCart} />
-      <span className="c-Plp__c-SortAndFilterPanel__c-CartIcon__badge">{props.cartTotalCount}</span>
+      <span className="c-Plp__c-Header__c-CartIcon__badge">{props.cartTotalCount}</span>
     </div>
   );
 };

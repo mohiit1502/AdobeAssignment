@@ -36,9 +36,13 @@ const Header = props => {
   
   return (
     <header className='c-Header'>
-      <Link to="/view/plp" className="c-Header__logo-main"><FontAwesomeIcon className="c-Header__iconClass" icon={faStar} /></Link>
-      <Search />
-      {!props.inCart && <CartIcon />}
+      <div className="container">
+        <div className="row">
+          <div className="col-1 c-Header--margin-right"><Link to="/view/plp" className="c-Header__logo-main"><FontAwesomeIcon className="c-Header__iconClass" icon={faStar} /></Link></div>
+          <div className={`${props.inCart ? "col-10" : "col-9 c-Header--margin-right"}`}><Search inCart={props.inCart} /></div>
+          <div className="col-1 c-Header__cartIconContainer--aligner">{!props.inCart && <CartIcon />}</div>
+        </div>
+      </div>
     </header>
   );
 };

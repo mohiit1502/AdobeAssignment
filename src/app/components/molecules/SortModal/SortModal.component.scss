@@ -1,3 +1,39 @@
+@import './../../../styles/variables';
+
 .c-SortModal {
-  
+    // transform: translate(0,0);
+    // transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+
+    &.modal {
+        &.show {
+            display: block;
+            background-color: rgba(0,0,0,0.5);
+        }
+        // &.fade .modal-dialog {
+        //     transition: transform .3s ease-out;
+        // }
+        .modal-dialog {
+            pointer-events: auto;
+            .modal-body {
+                color: $neutral-40;
+                .error {
+                    color: $error-color;
+                    font-size: $small-font-size;
+                }
+            }
+        }
+    }
+
+    &.ReactModal__Overlay {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &.ReactModal__Overlay--after-open {
+        opacity: 1;
+    }
+    
+    &.ReactModal__Overlay--before-close {
+        opacity: 0;
+    }
 }

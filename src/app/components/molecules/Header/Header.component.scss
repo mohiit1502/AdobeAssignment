@@ -1,7 +1,7 @@
 @import './../../../styles/variables';
 
 .c-Header {
-    display: flex;
+    // display: flex;
     // align-items: center;
     // justify-content: center;
     position: fixed;
@@ -12,24 +12,54 @@
     width: 100%;
     background-color: $brand-color;
     color: $neutral-00;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
     z-index: 2;
     transition: transform 0.4s;
 
+    .row {
+        justify-content: space-between;
+        .c-Header__cartIconContainer--aligner {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    [class*='col-'] {
+        padding: 0;
+
+        &.c-Header--margin-right {
+            margin-right: 0.8em;
+        }
+    }
+
     .c-Header__logo-main {
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
     .c-Header__iconClass {
         transform: rotateX(18deg) rotateZ(10deg) scale(2);
         color: yellow;
-        margin: 6px 0px 3px 3px;
+        // margin: 6px 0px 3px 3px;
     }
 
     .header-icon {
         font-size: $bigger-font-size;
         &:hover {
             color: $light-accent-color;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        [class*='col-'] {
+            padding: 0 15px;
+        }
+        .c-Header__logo-main {
+            justify-content: normal;
         }
     }
 }

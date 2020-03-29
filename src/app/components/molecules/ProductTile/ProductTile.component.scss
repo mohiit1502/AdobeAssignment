@@ -1,9 +1,6 @@
 @import './../../../styles/variables';
 
 .c-Plp__c-ProductContainer__c-ProductTile {
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    // margin-bottom: 2rem;
     padding: 10px 15px;
     border: 1px solid $neutral-17;
 
@@ -31,6 +28,9 @@
     }
 
     @media only screen and (min-width: 768px) {
-        
+        border: none;
+        &:not(:last-child) {
+            margin-right: 2em;
+        }
     }
 }

@@ -13,3 +13,6 @@ export const getPlp = createSelector(
 export const getFormValues = createGetSelector(getPlp, 'formValues')
 export const getFormErrors = createGetSelector(getPlp, 'formErrors')
 export const getProducts = createGetSelector(getPlp, 'products')
+export const getFilterRange = createGetSelector(getPlp, 'filterRange')
+export const getSortSelection = createGetSelector(getPlp, 'sortBy')
+export const getSearchString = createGetSelector(getPlp, 'searchString')
