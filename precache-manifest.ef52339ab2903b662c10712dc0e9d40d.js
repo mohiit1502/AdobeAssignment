@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab1f94e26e39a46af2861d0748a9ec5c",
+    "revision": "905138a169fff9f0d56acb6378c778ac",
     "url": "/adobeassignment/index.html"
   },
   {
@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adobeassignment/static/css/3.de424728.chunk.css"
   },
   {
-    "revision": "d9a274fcda21fe93524e",
+    "revision": "bef9aa8f1b2a291318f2",
     "url": "/adobeassignment/static/css/4.0ef3a63e.chunk.css"
   },
   {
-    "revision": "a0f30fa13109da35aef4",
+    "revision": "699527834f045608e956",
     "url": "/adobeassignment/static/css/5.5e513931.chunk.css"
   },
   {
@@ -20,11 +20,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adobeassignment/static/css/6.60eec0d8.chunk.css"
   },
   {
-    "revision": "35519bb93be5057a8cda",
+    "revision": "cd1d0ce9fc519efc8ae6",
     "url": "/adobeassignment/static/css/8.cf1d0990.chunk.css"
   },
   {
-    "revision": "17ea0c2587142147d815",
+    "revision": "9db8a47b04e4f7e065f9",
     "url": "/adobeassignment/static/css/main.531d6279.chunk.css"
   },
   {
@@ -40,31 +40,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adobeassignment/static/js/3.1ef0ea03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d9a274fcda21fe93524e",
-    "url": "/adobeassignment/static/js/4.68a509ec.chunk.js"
+    "revision": "bef9aa8f1b2a291318f2",
+    "url": "/adobeassignment/static/js/4.199e02a8.chunk.js"
   },
   {
-    "revision": "a0f30fa13109da35aef4",
-    "url": "/adobeassignment/static/js/5.d4001fe4.chunk.js"
+    "revision": "699527834f045608e956",
+    "url": "/adobeassignment/static/js/5.39920f20.chunk.js"
   },
   {
     "revision": "66e1709d3fe5e27669f3",
     "url": "/adobeassignment/static/js/6.c8725048.chunk.js"
   },
   {
-    "revision": "b3d34f3dddb37d234a8f",
-    "url": "/adobeassignment/static/js/7.b63a031b.chunk.js"
+    "revision": "799534cead4b09c67dbd",
+    "url": "/adobeassignment/static/js/7.f83da473.chunk.js"
   },
   {
-    "revision": "35519bb93be5057a8cda",
-    "url": "/adobeassignment/static/js/8.97dfc8e0.chunk.js"
+    "revision": "cd1d0ce9fc519efc8ae6",
+    "url": "/adobeassignment/static/js/8.cdecd739.chunk.js"
   },
   {
-    "revision": "17ea0c2587142147d815",
-    "url": "/adobeassignment/static/js/main.5d253b8a.chunk.js"
+    "revision": "9db8a47b04e4f7e065f9",
+    "url": "/adobeassignment/static/js/main.647d7343.chunk.js"
   },
   {
-    "revision": "ed9937b2aca64ad65177",
-    "url": "/adobeassignment/static/js/runtime-main.44c4e860.js"
+    "revision": "f6e2f1e08192fb121471",
+    "url": "/adobeassignment/static/js/runtime-main.906a69da.js"
+  },
+  {
+    "revision": "5e2390f880b813fa273d8ca7dd0b7b8c",
+    "url": "/adobeassignment/static/media/dummyImage.5e2390f8.jpeg"
   }
 ]);
