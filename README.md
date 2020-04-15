@@ -1,2 +1,2 @@
-# adobeassignment
-Adobe Assignment from JoulesWatts Business Solutions
+# eComDemo
+Application Demonstrating a subset of features of an eCommerce site.
