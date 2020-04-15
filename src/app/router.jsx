@@ -26,7 +26,7 @@ class Router extends React.Component {
         const {store} = this.props
         return (
             <Provider store={store}>
-                <BrowserRouter basename="/adobeassignment">
+                <BrowserRouter basename="/eComDemo">
                     <Route exact path="/" component={LoadablePLP} />
                     <Route path="/login" component={LoadableLogin} />
                     <Route path="/view/plp" component={LoadablePLP} />

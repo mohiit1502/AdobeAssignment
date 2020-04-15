@@ -1,6 +1,6 @@
 {
-  "name": "adobeassignment",
-  "homepage": "http://mohiit1502.github.io/adobeassignment",
+  "name": "ecomdemo",
+  "homepage": "http://mohiit1502.github.io/eComDemo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,6 +44,7 @@
     "jquery": "^3.4.1",
     "mini-css-extract-plugin": "0.9.0",
     "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -61,6 +62,7 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-test-renderer": "^16.13.1",
+    "react-transition-group": "^4.3.0",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-analytics": "^0.3.1",
@@ -82,7 +84,10 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "clientstart": "node scripts/start.js",
+    "serverstart": "cd server && npm start",
+    "start": "run-p serverstart clientstart ",
+    "install": "cd server && npm install",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint . --ext .js,.ts",

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SortAndFilterPanel from './../SortAndFilterPanel'
 import ProductContainer from './../ProductContainer'
 import FilterTool from './../FilterTool'
@@ -42,12 +43,8 @@ const ProductContainerWithTools = ({isMobile, products}) => {
   </section>
 };
 
-ProductContainerWithTools.defaultProps = {
-
-};
-
 ProductContainerWithTools.propTypes = {
-
+  products: PropTypes.array
 };
 
 export default ProductContainerWithTools;

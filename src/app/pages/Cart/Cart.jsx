@@ -16,7 +16,7 @@ import Footer from './../../components/molecules/Footer'
 const Cart = ({cartItems, cartTotalCount, history, products, updateCart}) => {
 
   const isCartEmpty = !cartItems || Object.keys(cartItems).length === 0
-
+  
   const navigateToPlp = () => {
     history.push('/view/plp')
   }

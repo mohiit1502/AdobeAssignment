@@ -1,2 +1,2 @@
-# adobeassignment
-Adobe Assignment from JoulesWatts Business Solutions
+# ecomdemo
+Dummy App showcasing basic eCommerce app functionalities

@@ -5,8 +5,8 @@ import './CartSummary.component.scss';
 const CartSummary = ({cartItems, products}) => {
 
   const totalData = cartItems && Object.keys(cartItems).reduce((priceAccumulator, productId) => {
-    const matchedProducts = products.filter(product => product.id === parseInt(productId))
-    const price = matchedProducts && matchedProducts.length > 0 && matchedProducts[0].price
+    const matchedProducts = products.filter(product => product.id === productId)
+    const price = matchedProducts && matchedProducts.length > 0 && matchedProducts[0].price.display
     const discount = matchedProducts && matchedProducts.length > 0 && matchedProducts[0].discountAmount
     priceAccumulator.totalPrice = priceAccumulator.totalPrice + (price * cartItems[productId])
     priceAccumulator.discount = priceAccumulator.discount + (discount * cartItems[productId])

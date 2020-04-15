@@ -18,7 +18,7 @@ const CartList = ({cartItems, products, isCartEmpty, cartTotalCount, updateCart}
   }
 
   const cartItemTiles = !isCartEmpty && Object.keys(cartItems).map((itemId, key) => {
-    const product = products && products.length > 0 && products.filter(product => product.id === parseInt(itemId))[0]
+    const product = products && products.length > 0 && products.filter(product => product.id === itemId)[0]
     return (
       <CartItem 
         product={product}

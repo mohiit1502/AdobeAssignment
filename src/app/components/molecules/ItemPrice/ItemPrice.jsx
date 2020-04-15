@@ -13,7 +13,7 @@ const ItemPrice = ({product}) => {
         hasDiscount &&
         (
           <React.Fragment>
-            <span className="c-ItemPrice__price--strikethrough"> {product.price}</span>
+            <span className="c-ItemPrice__price--strikethrough"> {product.price.display}</span>
             <span className="c-ItemPrice__discount">{product.discount}% off</span>
           </React.Fragment>
         )

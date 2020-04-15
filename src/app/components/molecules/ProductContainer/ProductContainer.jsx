@@ -28,9 +28,10 @@ const ProductContainer = props => {
   let productsWithDiscountedPrice = props.products 
     && props.products.length !== 0
     && props.products.map(product => {
-      const discount =  product.discount && product.price * (product.discount/100)
+      const price = product.price.display
+      const discount = product.discount && price * (product.discount/100)
       product.discountAmount = Math.ceil(discount)
-      product.discountedPrice = Math.ceil(product.price - product.discountAmount)
+      product.discountedPrice = Math.ceil(price - product.discountAmount)
       return product
     })
   if (productsWithDiscountedPrice) {
