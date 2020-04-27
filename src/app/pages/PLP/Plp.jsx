@@ -7,6 +7,8 @@ import Header from './../../components/molecules/Header'
 import Footer from './../../components/molecules/Footer'
 import ProductContainerWithTools from '../../components/molecules/ProductContainerWithTools/ProductContainerWithTools';
 
+import productJson from './../../static/data/products.json';
+
 const Plp = ({dispatchProducts}) => {
   
   const [products, setProducts] = useState([])
@@ -25,12 +27,20 @@ const Plp = ({dispatchProducts}) => {
     fetch('http://localhost:3001/getProducts')
       .then(res => res.json())
       .then(products => {
-        if (typeof products === 'string') {
+        if (!products) {
+          products = productJson
+          console.log(products)
+        } else if (typeof products === 'string') {
           products = JSON.parse(products)
         }
         // console.log(products)
         setProducts(products)
         dispatchProducts(products)
+      })
+      .catch(err => {
+        setProducts(productJson)
+        dispatchProducts(productJson)
+        console.log(productJson)
       })
   }, [])
 
